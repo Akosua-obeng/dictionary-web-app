@@ -1,0 +1,260 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: rgb(4, 9, 27);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: 'Outfit', sans-serif;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  /*background-color: rgb(19, 15, 15);*/
+  margin-top: 5em;
+}
+
+.avatar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 90%;
+  /*border-bottom-style: solid;
+  border-bottom-width: 0.05px;*/
+  margin-bottom: 5em;
+}
+.avatar-container{
+  border-bottom-style: solid;
+  border-bottom-width: 0.1px;
+  color: #80a0e7;
+}
+.avatar img{
+  border-radius: 50%;
+  width: 156px;
+  height: 156px;
+  border-color: #37456c;
+  border-style: solid;
+  border-width: 2px;
+}
+.avatar div{
+  margin-left: 20px;
+  font-family: 'Outfit', sans-serif;
+}
+.name h1:nth-child(1){
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.name h1:nth-child(2){
+  font-size: 32px;
+  color: #84a9f8;
+ margin-bottom: 15px;
+}
+.name p{
+  font-size: 20px;
+  color: #dadde7;
+}
+
+.about-me-container{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: #80a0e7;
+}
+.about-me{
+  margin-top: 3em;
+  margin-bottom: 3em;
+  /*border-bottom-style: solid;
+  border-bottom-width: 1px;*/
+  color: white;
+  font-size: 24px;
+  width: 85%;
+  font-style: 'Outfit', sans-serif;
+}
+.about-me h1{
+  font-size: 32px;
+  margin-bottom: 1em;
+}
+.about-me p:nth-child(2){
+  margin-bottom: 1em;
+  font-size: 24px;
+}
+.about-me p:nth-child(3){
+  margin-bottom: 3em;
+  font-size: 24px;
+}
+
+.experience-container{
+  margin-top: 3em;
+  color: #dadde7;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #84a9f8;
+}
+.experience{
+  margin-bottom: 3em;
+}
+.experience h1{
+  margin-bottom: 1em;
+  font-style: '';
+}
+.experience-details{
+  display: flex;
+}
+.experience-details h3{
+  font-size: 24px;
+}
+.experience-details p{
+  font-size: 20px;
+}
+.brand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #80a0e7;
+  border-width: 1px;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.brand i{
+  font-size: 30px;
+}
+.experience-up{
+  display: flex;
+  align-items: center;
+  /*justify-content: space-between;*/
+  margin-bottom: 1.5em;
+}
+.experience-up .experience-details{
+  margin-right: 13em;
+}
+.experience-down{
+  display: flex;
+  align-items: center;
+  /*justify-content: space-between;*/
+}
+.experience-down .experience-details{
+  margin-right: 14em;
+}
+
+
+.skills-container{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #84a9f8;
+}
+.skills{
+  margin-top: 3em;
+  margin-bottom: 3em;
+  color: white;
+  width: 90%;
+}
+.skill-details{
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill-details div{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #80a0e7;
+  margin-top: 1em;
+  margin-right: 1em;
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.skill-details div p{
+  padding: 12px 14px;
+}
+
+.portfolio-container{
+  border-bottom-style: solid;
+  border-bottom-color: #84a9f8;
+  border-bottom-width: 1px;
+}
+.portfolio{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.portfolio .title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 3em;
+}
+.title a{
+  color: #bedbfe;
+  font-size: 20px;
+  font-family: 'Outfit', sans-serif;
+  margin-right: 5px;
+}
+.title img{
+  color: #bedbfe;
+}
+.images{
+  display: flex;
+  flex-wrap: wrap;
+}
+.images div{
+  margin: 0.5em;
+}
+.images img{
+  border-radius: 5px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+  width: 90%;
+}
+.footer h1{
+  color: white;
+  margin-bottom: 1em;
+}
+.footer p{
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  color: #dadde7;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.footer button{
+  width: 214px;
+  height: 56px;
+  font-size: 20px;
+  font-family: 'Outfit', sans-serif;
+  background-color: #1055ea;
+  border-radius: 6px;
+  color: white;
+  border-style: none;
+}
+.link{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.link div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2em;
+}
+.link div i{
+  color: #dadde7;
+  margin-left: 0.5em;
+  font-size: 20px;
+}
+.link p{
+  margin-bottom: 0;
+  font-size: 20px;
+}
