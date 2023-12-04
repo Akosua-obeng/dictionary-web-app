@@ -207,6 +207,34 @@ body{
 .images img{
   border-radius: 5px;
 }
+/*---------form----------*/
+.form-container{
+  margin-top: 10px;
+}
+form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+form div {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+form div input{
+  width: 30vw;
+  border-style: none;
+  height: 5vh;
+}
+.message input{
+  width: 60vw;
+  height: 30vh;
+  border-style: none;
+}
+form label{
+  color: white;
+}
 
 .footer{
   display: flex;
@@ -257,4 +285,80 @@ body{
 .link p{
   margin-bottom: 0;
   font-size: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body{
+    /*background-color: red;*/
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #80a0e7;
+    border-width: 1px;
+    width: 95px;
+    height: 50px;
+    margin-right: 20px;
+}
+.experience-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-bottom: 1.5em;
+}
+.experience-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body{
+    /*background-color: green;*/
+  }
+  .avatar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 90%;
+    margin-bottom: 5em;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body{
+    /*background-color: tomato;*/
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body{
+    /*background-color: blue;*/
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body{
+    /*background-color: magenta;*/
+  }
 }
