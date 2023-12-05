@@ -232,6 +232,14 @@ form div input{
   height: 30vh;
   border-style: none;
 }
+.icon-container{
+  position: relative;
+}
+.icon-container i{
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
 form label{
   color: white;
 }
@@ -327,7 +335,7 @@ form label{
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
   body{
     /*background-color: green;*/
   }
@@ -340,6 +348,23 @@ form label{
     width: 90%;
     margin-bottom: 5em;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+form div input {
+  width: 50vw;
+  border-style: none;
+  height: 5vh;
+}
+.message input {
+  width: 60vw;
+  height: 10vh;
+  border-style: none;
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -347,6 +372,14 @@ form label{
   body{
     /*background-color: tomato;*/
   }
+  .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 90%;
+    margin-bottom: 5em;
+}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -354,6 +387,14 @@ form label{
   body{
     /*background-color: blue;*/
   }
+  .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 90%;
+    margin-bottom: 5em;
+}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -361,4 +402,12 @@ form label{
   body{
     /*background-color: magenta;*/
   }
+  .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 90%;
+    margin-bottom: 5em;
+}
 }
