@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(228, 220, 220);
+}
+.registration-container{
+  border-width: 1px;
+  border-color: grey;
+  border-radius: 8px;
+  box-shadow: 0.5px;
+  width: 60vw;
+  background-color: white;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+h1{
+  color: black;
+}
+.key-icon{
+  display: flex;
+  flex: 0.4;
+  align-items: center;
+  justify-content: space-between;
+  /*width: 30%;*/
+}
+
+.key-icon {
+  color: white;
+  margin-left: 2vw;
+}
+
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+  border-radius: 50%;
+  width: 15%;
+  height: 6vh;
+}
+p{
+  color: gray;
+}
+.heading-btn{
+  background-color: white;
+  color: green;
+  border-style: none;
+  margin-right: 3vw;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-style: solid;
+  border-top-color: grey;
+  border-top-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: grey;
+  border-bottom-width: 1px;
+}
+.login-email{
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.login-email input{
+  height: 5vh;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 0.2px;
+}
+
+.gender-main{
+  margin-top: 4vh;
+}
+.gender{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gender div{
+  width: 25vw;
+  /*border-color: blue;*/
+  border-style: solid;
+  margin-right: 2vw;
+  border-width: 0.5px;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 6px;
+}
+.gender input{
+  margin-right: 1vw;
+}
+.female{
+  border-color: blue;
+}
+.male{
+  background-color: rgb(218, 214, 214);
+  border-style: none;
+  border-color: rgb(218, 214, 214);
+}
+.male input{
+  color: rgb(236, 229, 229);
+  /*margin-right: 1vw;*/
+}
+
+.dob{
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+}
+.dob input{
+  width: 55vw;
+  height: 5vh;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 0.1px;
+}
+
+.subscribe{
+  margin-top: 3vh;
+  margin-right: 35vw;
+}
+
+.registration-btn{
+  margin-top: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin-bottom: 3vh;
+}
+.registration-btn input{
+  width: 100%;
+  height: 5vh;
+  border-radius: 6px;
+  border-style: none;
+  border-width: 0.1px;
+  color: gray;
+  margin-bottom: 3vh;
+}
+
+.footer-div{
+  margin-top: 3vh;
+}
+.footer-div p{
+  text-align: center;
+  font-size: 10px;
+}
+.footer-div a{
+  text-decoration: none;
+  color: blue;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-right: 2vw;
+    width: 9vw;
+    height: 6vh;
+  }
+  h1 {
+    color: black;
+    font-size: 1.3em;
+  }
+  p {
+    color: gray;
+    font-size: 15px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-right: 2vw;
+    width: 4vw;
+    height: 7vh;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+}
