@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  $color-red : red;
+  $color-white : white;
+
+
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+  }
+  
+
+  .agent-container {
+    background-color: $color-white;
+    max-width: 70%;
+    margin-top: 3vh;
+    border-radius: 6px;
+  }
+  
+  .heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 13vh;
+    /*border-bottom-color: grey;
+    border-bottom-width: 0.5px;
+    border-bottom-style: solid;*/
+  }
+  
+  .details {
+    display: flex;
+    width: 70vw;
+  }
+  .details div {
+    width: 25%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2vh;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: grey;
+  }
+  .details div input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+
+  .details div input:checked {
+    border: 2px solid #4caf50;
+  }
+  .agency-container {
+    padding: 0.5px;
+    position: relative;
+  }
+
+
+  .agency-container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Adjust the height of the bottom border as needed */
+    background-color: green; /* Set the color of the bottom border */
+    z-index: 3; /* Ensure the bottom border is above the container's border */
+  }
+  .agency-container label {
+    color: green;
+  }
+  .agency-container input {
+    accent-color: green;
+    border-style: solid;
+    border-width: 0.5px;
+  }
+  .personal {
+    color: green;
+  }
+  
+  .profile-heading {
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+  }
+  
+  .profile-container {
+
+
+    display: flex;
+    justify-content: space-between;
+
+
+
+    .first-card{
+        // background-color: tan;
+        width: 30%;
+    }
+
+
+    .second-card{
+        // background-color: gray;
+        width: 30%;
+
+        .two-col{
+            display: flex;
+            // background: teal;
+            flex-direction: row;
+            justify-content: space-between;
+
+            div{
+                width: 47%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .third-card{
+        // background-color: goldenrod;
+        width: 30%;
+    }
+
+
+  }
+
+
+
+
+
+  .profile-container div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+  }
+
+
+  .profile-container div input {
+    height: 5vh;
+  }
+
+
+  .profile-container .city-state {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+
+//   .city-state div input {
+//     width: 7vw;
+//   }
+  
+  .profile-container .office-container {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+  }
+  .profile-container .office-container div div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    background-color: rgb(180, 171, 171);
+    margin-top: 0px;
+  }
+  .radio-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .office-container .radio-container {
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: grey;
+  }
+  .office-container .radio-container input {
+    height: 15px;
+  }
+  
+ 
+  
