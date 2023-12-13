@@ -1,0 +1,215 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(220, 239, 245);
+
+  .agent-container{
+    background-color: white;
+    border-radius: 6px;
+    width: 75%;
+    margin-top: 4vh;
+  }
+}
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  div{
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgb(187, 182, 182);
+    width: 25%;
+    height: 6vh;
+
+    input{
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      height: 15px;
+      width: 15px;
+      border: 2px solid green;
+      border-radius: 50%;
+    }
+  }
+
+  div:nth-child(1){
+    border-left-color: white;
+  }
+
+  div:nth-child(3){
+    input{
+      border: 2px solid gray;
+    }
+  }
+
+  div:nth-child(4){
+    border-right-color: white;
+    
+    input{
+      border: 2px solid gray;
+    }
+  }
+
+  div:nth-child(2){
+    border-bottom-color: green;
+    background-color: whitesmoke;
+    border-bottom-width: 2.5px;
+  }
+}
+
+.heading-container{
+  display: flex;
+  align-items: center;
+  height: 16vh;
+  h2{
+    margin-left: 20px;
+  }
+}
+
+.profile-heading{
+  margin-left: 6vw;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.profile-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 3vw;
+  div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1vh;
+    width: 70vw;
+    label{
+      color: gray;
+      font-size: 15px;
+    }
+    .city-state{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 30%;
+      div{
+        width: 45%;
+      }
+    }
+    .office-space{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 3.5vh;
+      height: 4vh;
+      width: 30%;
+
+      div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: whitesmoke;
+        border-radius: 4px;
+        width: 100%;
+        height: 6vh;
+        input{
+          margin-right: 1vw;
+        }
+        label{
+          margin-top: 1vh;
+        }
+        .owned{
+          input{
+            accent-color: green;
+          }
+        }
+      }
+    }
+    .file-container{
+      .file-chosen{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 6vh;
+        width: 100%;
+        background-color: whitesmoke;
+        border-radius: 4px;
+        input{
+          height: 4vh;
+          width: 100%;
+          margin-left: 1vw;
+          margin-top: 1vh;
+        }
+        p{
+          font-size: 12px;
+          margin-left: 2vw;
+          margin-top: 1vh;
+        }
+      }
+    }
+    div{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 20vw;
+      input{
+        height: 6vh;
+        border-radius: 3px;
+        border:0.5px solid gray;
+      }
+      i{
+        position: absolute;
+        top: 70%;
+        transform: translateY(-50%);
+        right: 10px;
+        color: gray;
+      }
+    }
+  }
+}
+
+.note{
+  margin-top: 5vh;
+  margin-left: 4vw;
+  text-align: start;
+  color: rgb(150, 145, 145);
+  font-size: 12px;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-bottom: 8vh;
+  margin-top: 14vh;
+  button{
+    margin-right: 2vw;
+    height: 7vh;
+    border-style: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+  }
+  button:nth-child(1){
+    width: 10vw;
+  }
+  button:nth-child(2){
+    background-color: green;
+    border-style: none;
+    color: white;
+    width: 12vw;
+  }
+}

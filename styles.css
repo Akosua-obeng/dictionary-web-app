@@ -81,6 +81,8 @@ body{
   color: green;
 }
 
+
+/*--profile heading--*/
 .profile-heading{
   margin-top: 3vh;
   margin-bottom: 4vh;
@@ -100,41 +102,4 @@ body{
 .profile-container div input{
   width: 19vw;
   height: 5vh;
-}
-.profile-container .city-state{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.city-state div input{
-  width: 7vw;
-}
-
-.profile-container .office-container{
-  display: flex;
-  flex-direction: column;
-  width: 20vw;
-}
-.profile-container .office-container div div{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  align-items: center;
-  width: 60%;
-  background-color: rgb(180, 171, 171);
-  margin-top: 0px;
-}
-.radio-container{
-  display: flex;
-  flex-direction: row;
-}
-.office-container .radio-container{
-  border-style: solid;
-  border-width: 0.5px;
-  border-color: grey;
-}
-.office-container .radio-container input{
-  height: 15px;
 }
