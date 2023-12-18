@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(228, 228, 228);
+    font-family: "Inconsolata", monospace;
+    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(170, 247, 221); 
+
+}
+
+main {
+    width: 80rem;
+    margin: 0px auto;
+    /*height: 100vh; */
+}
+
+section{
+  margin-top: 30px;
+}
+
+.big-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    background-color: white;
+    /* border-width: 6px; */
+    /* border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px; */
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.big-card-one{
+  border-left: 6px solid teal;
+}
+.card-content-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: gray; */
+}
+
+.card-content-left div {
+    margin: 8px 0;
+}
+
+.content-image {
+    width: 70px;
+    height: 70px;
+    margin-right: 7px;
+}
+
+.cta-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-1 .tag {
+    background-color: teal;
+    color: white;
+    font-size: 11px;
+}
+
+/* Re-write-code to remove importance */
+/*done*/
+.cta-1 .featured-btn {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.company-name {
+    margin-right: 3px;
+    color: teal;
+  }
+
+.cta-1 button {
+    background-color: rgb(165, 156, 144);
+    padding: 0.2em 0.7em;
+    margin-right: 7px;
+    border-radius: 8px;
+}
+.cta-account{
+  margin-left: 20px;
+}
+
+.card-content-right {
+    display: flex;
+    /* background-color: beige; */
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+}
+
+li button {
+    border: none;
+    margin: 3px;
+    background-color: rgb(245, 245, 241);
+    font-weight: 600;
+    color: teal;
+    padding: 5px 10px;
+    border-radius: 9px;
+}
+
+button {
+    border: none;
+}
+
+.cta-2 {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+
+.attribution {
+    display: flex;
+    padding: 1em 0;
+}
+.cta-2 li{
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    /* padding:; */
+}
+
+
+@media(max-width: 750px){
+  main{
+    width: 50rem;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55rem;
+  }
+
+  .big-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 60px;
+    width: 20rem;
+  }
+  .content-image{
+    position: absolute;
+    top: -40px;
+    z-index: 1;
+    left: 20px;
+  }
+  .card-content-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
