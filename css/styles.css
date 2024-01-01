@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*--CONTAINER--*/
+.container {
+  display: flex;
+  width: 95vw;
+  height: 120vh;
+  background-color: white;
+  /*-----left column----*/
+  /*-----RIGHT COLUMN ---*/
+}
+.container .left-col {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  border-right-style: solid;
+  border-right-width: 0.5px;
+  border-right-color: gray;
+  background-color: rgb(14, 14, 44);
+}
+.container .left-col i {
+  margin-left: 1vw;
+}
+.container .left-col div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 2vh;
+}
+.container .left-col div:nth-child(1) i {
+  margin-right: 1vw;
+  color: darkblue;
+}
+.container .left-col div:nth-child(1) h1 {
+  color: white;
+}
+.container .left-col div:nth-child(2) p:nth-child(1) {
+  font-size: 8px;
+  color: rgb(81, 138, 138);
+  margin-left: 1.5vw;
+}
+.container .left-col div:nth-child(2) div {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 10px;
+  color: white;
+}
+.container .left-col div:nth-child(2) div i:nth-child(1) {
+  margin-right: 0.5vw;
+}
+.container .left-col div:nth-child(2) div:nth-child(2) {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background-color: rgb(70, 52, 112);
+  width: 12vw;
+  height: 5vh;
+  font-size: 11px;
+}
+.container .left-col div:nth-child(2) div:nth-child(5) i:nth-child(1) {
+  margin-right: 0;
+  margin-left: 1vw;
+}
+.container .left-col div:nth-child(2) div:nth-child(5) i:nth-child(2) {
+  font-size: 8px;
+  margin-left: 0.5vw;
+}
+.container .left-col .foot {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: vh;
+}
+.container .left-col .foot div:nth-child(1) {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(27, 27, 32);
+  margin-left: 2vw;
+  width: 100%;
+  height: 5vh;
+  border-radius: 8px;
+}
+.container .left-col .foot div:nth-child(1) i {
+  font-size: 12px;
+  color: white;
+}
+.container .left-col .foot div:nth-child(2) {
+  display: flex;
+  font-size: 12px;
+  color: gray;
+}
+.container .left-col .foot div:nth-child(2) i {
+  margin-right: 0.2vw;
+}
+.container .right-col {
+  width: 80%;
+}
+.container .right-col .right-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(14, 14, 44);
+  height: 8%;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px;
+  border-bottom-color: gray;
+}
+.container .right-col .right-top h3 {
+  color: white;
+  margin-left: 2vw;
+}
+.container .right-col .right-top div button {
+  border-radius: 16px;
+  background-color: rgb(70, 52, 112);
+  color: white;
+  width: 8vw;
+  border-style: none;
+  font-size: 12px;
+  margin-right: 1vw;
+  height: 5vh;
+}
+.container .right-col .right-top div button i {
+  font-size: 10px;
+  margin-right: 0;
+}
+.container .right-col .right-top div i {
+  color: rgb(189, 181, 181);
+  margin-right: 2vw;
+}
+.container .right-col .right-bottom {
+  background-color: rgb(12, 12, 29);
+  height: 92%;
+  display: flex;
+  justify-content: space-around;
+}
+.container .right-col .right-bottom div {
+  margin-top: 2vh;
+  flex: 0.2;
+}
+.container .right-col .right-bottom div i {
+  font-size: 10px;
+  margin-right: 0.5vw;
+}
+.container .right-col .right-bottom div p {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  margin-left: 1vw;
+}
+.container .right-col .right-bottom div p:nth-child(2) {
+  font-size: 8px;
+  color: gray;
+}
+.container .right-col .right-bottom div div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  height: 5vh;
+}
+.container .right-col .right-bottom div div {
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 12vh;
+  border-radius: 8px;
+}
+.container .right-col .right-bottom div:nth-child(1) i {
+  margin-right: 0;
+  color: aqua;
+}
+.container .right-col .right-bottom div:nth-child(2) i {
+  color: violet;
+}
+.container .right-col .right-bottom div:nth-child(3) i {
+  color: aquamarine;
+}
+.container .right-col .right-bottom .last-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.container .right-col .right-bottom .last-column p {
+  font-size: 15px;
+}/*# sourceMappingURL=styles.css.map */
