@@ -12,22 +12,10 @@ router
     createUser
   )
 
-  //gets the user info by id
+  //gets, deletes, updates the user info by id
   router
-  .route('/:id').get(
-    getUserInfo
-  )
+  .route('/:id').get(getUserInfo).delete(deleteUser).patch(updateUser)
 
-  //delete the user by id
-  router
-  .route('/:id').delete(
-    deleteUser
-  )
-
-  router
-  .route('/:id').patch(
-    updateUser
-  )
 
 
 module.exports = router;

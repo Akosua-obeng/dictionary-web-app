@@ -28,14 +28,25 @@ const app = express();
 // Body parser
 app.use(express.json());
 const user = require('./src/routes/userRoute')
+const job = require('./src/routes/jobRoute')
+const company = require('./src/routes/companyRoute')
 
 app.use('/public', express.static('public'));
 //app.use('/public', serveIndex('public'));
 
 app.use("/api/v1/users", user);
-app.get('/', (req, res) => {
+
+//For JOB
+app.use("/api/v1/jobs", job);
+
+
+//For Company
+app.use("/api/v1/companies", company);
+app.get('/', (req, res) =>{
   console.log(req.body)
-  res.send('Successful response.');
-});
+  res.send('Successful response.')
+})
+
+
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Example app is listening on port ${process.env.PORT}.`));

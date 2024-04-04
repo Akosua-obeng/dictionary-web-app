@@ -7,8 +7,7 @@ exports.createJob = async (req, res, next) => {
 
 //READ JOB INFO
 exports.getJobInfo = async (req, res, next) =>{
-  //id (3)
-  const job = Job.findById(req.params.id);
+  const job = await Job.findById(req.params.id);
 
   if(!job){
     return res.status(400).json({ success : false, message : 'Job with id not found'})
@@ -22,7 +21,7 @@ exports.getJobInfo = async (req, res, next) =>{
 //UPDATE JOB
 exports.updateJob = async (req, res, next) => {
 
-  const job = Job.findByIdAndUpdate(req.params.id, req.body)
+  const job = await Job.findByIdAndUpdate(req.params.id, req.body)
 
   if(!job){
     return res.status(400).json({success : false})
@@ -36,27 +35,27 @@ exports.updateJob = async (req, res, next) => {
 
 //DELETE JOB
 exports.deleteJob = async (req, res, next) => {
-  const job = Job.findByIdAndDelete(req.params.id)
+  const job = await Job.findByIdAndDelete(req.params.id)
 
   if(!job){
     return res.status(400).json({success : false})
   }
   res.status(200).json({
     success: true,
-    data: job
+    message: "Job successfully deleted"
   })
 }
 
 // DELETE JOB
 exports.delete = async (req, res, next) => {
-  const job = Job.deleteMany(req.params.id)
+  const job = await Job.deleteMany(req.params.id)
 
-  if(!user){
+  if(!job){
     return res.status(400).json({success: false})
   }
   res.status(200).json({
     success: true,
-    data: job
+    message: "job successfully deleted"
   })
 }
 

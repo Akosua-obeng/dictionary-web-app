@@ -10,13 +10,13 @@ exports.createUser = async (req, res, next) => {
 
 
 // READ USER INFO
-exports.getUserInfo = async (req, res , next) =>{
+exports.getUserInfo = async (req, res , next) => {
   // id (3)
-  const user = User.findById(req.params.id);
+  const user = await User.findById(req.params.id);
 
-      //  if(!user){
-      //      return res.status(400).json({  success : false, message : 'User with id not found' })
-      //  }
+       if(!user){
+           return res.status(400).json({  success : false, message : 'User with id not found' })
+       }
 
        res.status(200).json({
            success : true,
@@ -27,7 +27,7 @@ exports.getUserInfo = async (req, res , next) =>{
 // UPDATE USER
 exports.updateUser = async (req, res , next) =>{
   // id (3)
-  const user = User.findByIdAndUpdate(req.params.id, req.body);
+  const user = await User.findByIdAndUpdate(req.params.id, req.body);
 
   if(!user){
     return res.status(400).json({success : false})
@@ -43,27 +43,29 @@ exports.updateUser = async (req, res , next) =>{
 // DELETE USER
 exports.deleteUser = async (req, res , next) =>{
   // id (3)
-  const user = User.findByIdAndDelete(req.params.id);
+  const user = await User.findByIdAndDelete(req.params.id);
   
   if(!user){
     return res.status(400).json({success : false})
   }
   res.status(200).json({
     success: true,
-    data:user
+    // data:user
+    message: "Succesfully deleted"
   })
 }
 // DELETE USER
 exports.delete = async (req, res , next) =>{
   // id (3)
-  const user = User.deleteMany(req.params.id)
+  const user = await User.deleteMany(req.params.id)
 
   if(!user){
     return res.status(400).json({success : false})
   }
   res.status(200).json({
     success: true,
-    data: user
+    message: "successfully deleted"
+    // data: user
   })
 }
   // console.log(user, 'user field')

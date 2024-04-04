@@ -22,7 +22,6 @@
 
     jobRequirement:{
       type: String,
-      unique:false,
       required: [true, "Please add job requirements"]
     },
 
@@ -34,7 +33,6 @@
 
     jobSalary:{
       type: String,
-      unique: false,
       required: [true, "Salary required"],
     },
 
@@ -50,7 +48,7 @@
 
     jobSearchTags: {
       type: String,
-      required: [false]
+      match: []
     }
   })
 
