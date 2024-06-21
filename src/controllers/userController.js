@@ -1,11 +1,14 @@
-//importing
+ //importing
 const User = require("../models/User")
 
 exports.createUser = async (req, res, next) => {
-  // console.log(req.body)
   const user = await User.create(req.body)
-  res.status(200).json({success: true, message: "user created successfully", userInfo: user})
-  // console.log(user)
+  res.status(200).json({success: true, message: "user created successfully", userInfo: User})
+}
+
+exports.fetchAllUser = async (req, res, next) => {
+  const fetchUser = await User.find({})
+  res.status(200).json({success: true, message: "All users retrieved", totalUser: fetchUser.length, userInfo: fetchUser})
 }
 
 

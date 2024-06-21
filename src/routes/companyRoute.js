@@ -1,7 +1,12 @@
 const express = require("express");
 const router = express.Router();
-const {createCompany, getCompanyInfo, updateCompany, deleteCompany} = require("../controllers/companyController");
+const {createCompany, getCompanyInfo, updateCompany, deleteCompany, fetchAllCompany} = require("../controllers/companyController");
 const { getJobInfo } = require("../controllers/jobController");
+
+router
+  .route('/fetchAllCompany').get(
+    fetchAllCompany
+  )
 
 router
   .route('/createCompany').post(

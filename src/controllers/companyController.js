@@ -5,6 +5,11 @@ exports.createCompany = async (req, res, next) => {
   res.status(200).json({success: true, message: "Company created successfully", CompanyInfo: Company})
 }
 
+exports.fetchAllCompany = async (req, res, next) => {
+  const fetchCompany = await Company.find({})
+  res.status(200).json({success: true, message: "All companies retrieved", totalCompanies: fetchCompany.length, CompanyInfo: fetchCompany})
+}
+
 //READ COMPANY INFO
 exports.getCompanyInfo = async (req, res, next) =>{
   const company = await Company.findById(req.params.id);
