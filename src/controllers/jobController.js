@@ -5,6 +5,12 @@ exports.createJob = async (req, res, next) => {
   res.status(200).json({success: true, message: "Job created successfully", JobInfo: Job})
 }
 
+exports.fetchAllJob = async (req, res, next) => {
+  const fetchJob = await Job.find({})
+  res.status(200).json({success: true, message: "All jobs retrieved", totalJobs: fetchJob.length, JobInfo: fetchJob})
+  
+}
+
 //READ JOB INFO
 exports.getJobInfo = async (req, res, next) =>{
   const job = await Job.findById(req.params.id);
